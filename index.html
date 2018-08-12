@@ -9,69 +9,112 @@
     <link rel="shortcut icon" href="img/jia.ico" />
     <link rel="bookmark" href="img/jia.ico" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
 </head>
 
 <body>
-    <div class="wrap">
-        <div id="top" class="header">
-            <div class="mainvision">
-                <nav class="navbar navbar-expand-sm navbar-light  navbar_self ">
-                    <a class="navbar-brand " href="#"><img class="logo" src="img/logo_word.svg" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span>
-                                </a>
-                            <a class="nav-item nav-link scrollTop" href="#skill">#Skills</a>
-                            <a class="nav-item nav-link scrollTop" href="#experience">#Experience</a>
-                            <a class="nav-item nav-link scrollTop" href="#aboutme">#About Me</a>
-                            <a class="nav-item nav-link " href="#">Project</a>
-                        </div>
-                    </div>
-                </nav>
-                <div class="shadow"></div>
-                <div class="self-info">
-                    <img class="photo-self" src="img/selfie.jpg" alt="">
-                    <span class="name">劉恬佳 Claire Liu</span>
-                    <div class="row w-100 justify-content-end sm_layout">
-                        <div class="col-lg-3 col-sm-4 ">
-                        </div>
-                        <div class="col-lg-2 col-sm-4 col-6">
-                            <h4 class="mt-4"><i class="fas fa-child"></i>&nbsp;Gender</h4>
-                            <p class="mt-2 info_ans">Female</p>
-                        </div>
-                        <div class="col-lg-2 col-sm-4 col-6">
-                            <h4 class="mt-4"><i class="fas fa-birthday-cake"></i>&nbsp;Birth</h4>
-                            <p class="mt-2 info_ans">1992/01/12</p>
-                        </div>
-                        <div class="col-lg-2 col-sm-4 col-6">
-                            <h4 class="mt-4"> <i class="fas fa-mobile-alt"></i>&nbsp;Mobile</h4>
-                            <p class="mt-2 info_ans">0911-203-498</p>
-                        </div>
-                        <div class="col-lg-3 col-sm-4 col-6">
-                            <h4 class="mt-4"> <i class="far fa-envelope"></i>&nbsp;Email</h4>
-                            <a href="mailto:jiabyron0112@hotmail.com">
-                                <p class="mt-2 info_ans">
-                                Click me!</p>
-                            </a>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top boxshadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img style="height: 32px;" src="img/logo_word.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link scrollTop" href="#skill">#Skills</a>
+                    <a class="nav-item nav-link scrollTop" href="#experience">#Experience</a>
+                    <a class="nav-item nav-link scrollTop" href="#aboutme">#About Me</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Project
+                        </a>
+                        <div class="dropdown-menu navbar-self" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Web</a>
+                            <a class="dropdown-item" href="#">Graphic design</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </nav>
+    <div class="mainvision" id="top">
+        <div class="shadow d-flex align-items-sm-end align-items-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 mr-4"></div>
+                    <div class="col-sm-5">
+                        <div class="text-white name h4">劉恬佳 Claire Liu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="self-info">
+                <img class="photo-self rounded-circle border border-light" src="img/selfie.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="container info mb-4">
+        <div class="row ">
+            <div class="col-sm-3 col-12">
+                <span class="name h4"> 劉恬佳 Claire Liu</span>
+            </div>
+            <div class="col-sm-9 contactme">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="mt-4  text-center">
+                            <i class="fas fa-child"></i>&nbsp;Gender</h4>
+                        <p class="mt-2  text-center">Female</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="mt-4  text-center">
+                            <i class="fas fa-birthday-cake"></i>&nbsp;Birth</h4>
+                        <p class="mt-2  text-center">1992/01/12</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="mt-4  text-center">
+                            <i class="far fa-envelope"></i>&nbsp;Email</h4>
+                        <a href="mailto:jiabyron0112@hotmail.com">
+                            <p class="mt-2  text-center">
+                                jiabyron0112@hotmail.com</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="mt-4  text-center">
+                            <i class="fas fa-mobile-alt"></i>&nbsp;Mobile</h4>
+                        <p class="mt-2  text-center">0911-203-498</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- content -->
+    <div class="container">
         <div id="skill" class="skill container-fluid pb-4 ">
-            <h2 class="py-4">Skills</h2>
+            <h2 class="py-4">#Skills</h2>
             <div class="row">
                 <div class="col-sm-4 p-4">
-                    <h3><i class="fas fa-code"></i>前端技能</h3>
+                    <h3>
+                        <i class="fas fa-code"></i>前端技能</h3>
                     <p>網頁切版、CSS樣式設定、響應式網頁處理、基礎網頁互動效果</p>
                     <ul>
                         <li>HTML5</li>
@@ -82,7 +125,8 @@
                     </ul>
                 </div>
                 <div class="col-sm-4 p-4">
-                    <h3><i class="fas fa-pen-nib"></i>設計技能</h3>
+                    <h3>
+                        <i class="fas fa-pen-nib"></i>設計技能</h3>
                     <p>電腦繪圖、插畫設計、影像處理</p>
                     <ul>
                         <li>Illustrator</li>
@@ -91,7 +135,8 @@
                     </ul>
                 </div>
                 <div class="col-sm-4 p-4">
-                    <h3><i class="fas fa-desktop"></i>文書處理</h3>
+                    <h3>
+                        <i class="fas fa-desktop"></i>文書處理</h3>
                     <p>辦公室基本文書處理</p>
                     <ul>
                         <li>Word</li>
@@ -102,7 +147,7 @@
             </div>
         </div>
         <div id="experience" class=" experience container-fluid  pb-4">
-            <h2 class="py-4">Experience</h2>
+            <h2 class="py-4">#Experience</h2>
             <div class="timeline-section ">
                 <div class="row mt-3 justify-content-center timeline-pointer pb-3">
                     <div class="col-md-4 col-12 p-sm-3  title ">
@@ -113,13 +158,19 @@
                         <p>信用卡促刷活動企劃與執行&nbsp;</p>
                     </div>
                     <div class="col-md-4 col-12 p-sm-3   ">
-                        <h4><i class="fas fa-briefcase"></i> 工作內容</h4>
+                        <h4>
+                            <i class="fas fa-briefcase"></i> 工作內容</h4>
                         <ul>
-                            <li><i class="far fa-circle"></i>國內百貨檔期促刷活動</li>
-                            <li><i class="far fa-circle"></i>知名藥妝店促刷活動</li>
-                            <li><i class="far fa-circle"></i>JCB夏日遊樂祭</li>
-                            <li><i class="far fa-circle"></i>國際組織優惠推廣專案</li>
-                            <li><i class="far fa-circle"></i>NCCC小額支付平台回饋專案</li>
+                            <li>
+                                <i class="far fa-circle"></i>國內百貨檔期促刷活動</li>
+                            <li>
+                                <i class="far fa-circle"></i>知名藥妝店促刷活動</li>
+                            <li>
+                                <i class="far fa-circle"></i>JCB夏日遊樂祭</li>
+                            <li>
+                                <i class="far fa-circle"></i>國際組織優惠推廣專案</li>
+                            <li>
+                                <i class="far fa-circle"></i>NCCC小額支付平台回饋專案</li>
                         </ul>
                     </div>
                 </div>
@@ -130,9 +181,11 @@
                         <p>商業設計所 碩士&nbsp;</p>
                     </div>
                     <div class="col-md-4 col-12 p-sm-3  ">
-                        <h4><i class="fas fa-graduation-cap"></i> 論文題目</h4>
+                        <h4>
+                            <i class="fas fa-graduation-cap"></i> 論文題目</h4>
                         <p class="content">《行動購物APP數字資訊影響消費者購買意圖之影響》</p>
-                        <h4 class="mt-2"><i class="fas fa-chalkboard-teacher"></i> 課程助教</h4>
+                        <h4 class="mt-2">
+                            <i class="fas fa-chalkboard-teacher"></i> 課程助教</h4>
                         <p>中原商設 商品企劃課程</p>
                     </div>
                 </div>
@@ -143,12 +196,14 @@
                         <p>企業管理學系 學士&nbsp;</p>
                     </div>
                     <div class="col-md-4 col-12 p-sm-3   ">
-                        <h4><i class="fas fa-trophy"></i> 獲獎經驗</h4>
+                        <h4>
+                            <i class="fas fa-trophy"></i> 獲獎經驗</h4>
                         <p class="content">2013詠夢獎 願景2025青年創意提案大賽 </p>
                         <p class="rank">佳作</p>
                         <p class="content">2012區域和平志工績優團隊全國競賽 </p>
                         <p class="rank">社區服務貢獻獎</p>
-                        <h4><i class="fas fa-book-open"></i> 社團經驗</h4>
+                        <h4>
+                            <i class="fas fa-book-open"></i> 社團經驗</h4>
                         <p class="content">41th企管系系學會 公關部部長</p>
                         <p class="content">40th企管系系學會 公關部部員</p>
                     </div>
@@ -157,20 +212,33 @@
         </div>
         <div class="autobiography container-fluid">
             <div id="aboutme" class="aboutme my-4 mt-sm-0">
-                <h2 class="py-4">About Me</h2>
+                <h2 class="py-4">#About Me</h2>
                 <p>從學校、職場一路走來跨了很多領域，我認為每個過程都是很好的經驗，從中也得到許多珍貴的經驗。
-                    <span><a class="more" href="#">more...</a></span>
+                    <span>
+                        <a class="more" href="#">more...</a>
+                    </span>
                 </p>
                 <p class="hide_article">
                     求學期間主要修習行銷學程並提升平面設計水準，並思考將商業、行銷與設計做結合。 曾組隊參與全國性的商品企劃及行銷提案競賽以強化自己的提案整合能力，另一方面擔任指導教授商品企劃課的課程TA，過程中對於創意商品開發的規劃能力有蠻多啟發。研究所的論文內容是關於行動商務介面中，資訊呈現方式與消費者行為方面的關聯性研究，在研究的過程中獲得很多啟發。
                 </p>
-                <p class="hide_article">第一份工作任職於聯邦銀行信用卡暨支付金融處，擔任信用卡活動企劃，主要工作內容是與各通路洽談信用卡的促刷活動，並整合內部資源執行活動內容；工作中有接觸到活動網頁規劃及APP廣宣規劃，了解到使用者體驗有利於整體專案成效，因此想結合過去所學並轉換跑道成為網頁前端設計師。利用空閒時間自行學習網頁語法撰寫(HTML、CSS、RWD)並配合網頁基礎互動效果(jQuery)，現在已達到能熟悉運用；由於網頁前端工作博大精深，也將持續以學習的心態去吸收更多新技術，期望能保持自身水準並做出符合趨勢的成果。<span><a  class="hide" href="#">(hide)</a></span></p>
+                <p class="hide_article">第一份工作任職於聯邦銀行信用卡暨支付金融處，擔任信用卡活動企劃，主要工作內容是與各通路洽談信用卡的促刷活動，並整合內部資源執行活動內容；工作中有接觸到活動網頁規劃及APP廣宣規劃，了解到使用者體驗有利於整體專案成效，因此想結合過去所學並轉換跑道成為網頁前端設計師。利用空閒時間自行學習網頁語法撰寫(HTML、CSS、RWD)並配合網頁基礎互動效果(jQuery)，現在已達到能熟悉運用；由於網頁前端工作博大精深，也將持續以學習的心態去吸收更多新技術，期望能保持自身水準並做出符合趨勢的成果。
+                    <span>
+                        <a class="hide" href="#">(hide)</a>
+                    </span>
+                </p>
             </div>
         </div>
-        <div class="footer  pt-3">
+       
+    </div>
+    <footer class="bg-light py-4">
+        <div class="container text-secondary text-center">
+            <i class="far fa-copyright"></i>
+            Copyright 2018 CLAIREJIA
+        </div>
+        <div class="footer pt-2">
             <a class="scrollTop" href="#top" title="TOP">top</a>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

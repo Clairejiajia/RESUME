@@ -1,10 +1,10 @@
-.skill {
-    @media (max-width: 769px) {
+.skill { 
+   
         text-align: center;
-    }
+   
     h2 {
         font-weight: 600;
-        color: $vsion-main-color;
+        color:$vsion-main-color;
         font-size: $fontsize-xl;
         text-align: center;
     }
@@ -23,7 +23,7 @@
     }
     p {
         font-size: $fontsize-s;
-        color: $heavy-color;
+        color: $dark-color;  
         line-height: 20px;
         margin-top: 4px;
         margin-bottom: 4px;
