@@ -1,0 +1,22 @@
+.project_design_mainvision {
+    background-image: url(../img/rawpixel-580223-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+
+.box-shadow {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    transition: box-shadow .3s;
+    -webkit-transition: box-shadow .3s;
+    -moz-transition: box-shadow .3s;
+}
+
+.box-shadow:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card-footer {
+    background: transparent;
+}

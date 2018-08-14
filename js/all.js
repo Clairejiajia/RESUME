@@ -22,4 +22,8 @@ $(document).ready(function() {
 
         $('html,body').animate({ scrollTop: targetPos }, 1000);
     });
+    // modal
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 });
