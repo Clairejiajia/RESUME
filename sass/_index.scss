@@ -45,12 +45,12 @@
 .experience {
 
     text-align: left;
-    @media (max-width: 769px) {
+    @media (max-width: 420px) {
         text-align: center;
     }
     .title {
         text-align: right;
-        @media (max-width: 769px) {
+        @media (max-width: 420px) {
             text-align: center;
         }
     }
@@ -137,7 +137,7 @@
     z-index: 1;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 578px) {
     .timeline-section:after,
     .timeline-pointer::after {
         display: none;
