@@ -1,46 +1,90 @@
-.skill { 
-   
+.skill {
+    height: 400px;
+    position: relative;
+    margin-bottom: 30px;
+     @media (max-width:767px) {
+         height: 800px;
+    }  
+    @media (max-width:375px) {
+         height: 780px;
+    }
+    .skillbg {
+        border: 10px solid $vsion-secondary-color;
+        background: transparent;
+        border-left: none;
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        left: 0;
+        margin-top: 42px;
+        padding: 10px 20px;
+               @media (max-width:767px) {
+         width:78%;
+         
+    }  @media (max-width:375px) {
+         width:90%;
+         margin-top:20px;
+    }
+             h2{
+            color:$vsion-secondary-color;
+        }
+    }
+    .skill-content {
+              background:$vsion-main-color;
+        height: auto;
+        width: 85%;
+        position: absolute;
+        right: 0;
+        padding: 10px 20px;
+        margin-top: 110px;
         text-align: center;
-   
-    h2 {
-        font-weight: 600;
-        color:$vsion-main-color;
-        font-size: $fontsize-xl;
-        text-align: center;
+          border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+             @media (max-width:767px) {
+         width:90%;
     }
-    h3 {
-        font-weight: 600;
-        color: $vsion-main-color;
-        border-bottom: 2px solid $vsion-secondary-color;
-        font-size: $fontsize-l;
-        text-indent: 8px;
+       @media (max-width:375px) {
+         width:100%;
+         margin-top:90px;
     }
-    h4 {
-        color: $vsion-main-color;
-        margin-bottom: 8px;
-        font-size: $fontsize-m;
-        text-indent: 8px;
-    }
-    p {
-        font-size: $fontsize-s;
-        color: $dark-color;  
-        line-height: 20px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        padding-left: 12px;
-    }
-    ul {
-        padding-left: 18px;
-        li {
+
+        h3 {
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: white;
+            border-bottom: 2px solid $vsion-third-color;
+            font-size: $fontsize-l;
+            text-indent: 8px;
+        }
+        h4 {
+            color: $vsion-main-color;
+            margin-bottom: 8px;
+            font-size: $fontsize-m;
+            text-indent: 8px;
+        }
+        p {
             font-size: $fontsize-s;
-            color: $heavy-color;
-            line-height: 20px;
+            color: #fff;
+            line-height: 28px;
             margin-top: 4px;
             margin-bottom: 4px;
-            padding-left: 8px;
+           
+        }
+        ul {
+            padding-left: 18px;
+            li {
+                font-size: $fontsize-s;
+                color: $vsion-third-color;
+                line-height: 20px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                padding-left: 8px;
+            }
         }
     }
 }
+
 
 .experience {
 
@@ -174,11 +218,10 @@
                     color: $vsion-secondary-color;
                     font-size: $fontsize-xs;
                      :hover,
-                    :active {
+                     :active {
                         color: $vsion-main-color;
                     }
                 }
-                
             }
         }
         p.hide_article {
@@ -188,3 +231,4 @@
         }
     }
 }
+
