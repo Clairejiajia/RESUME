@@ -1,3 +1,4 @@
+
 .custom-nav {
     background-color: #fff;
     a {
@@ -7,6 +8,10 @@
         color: $vsion-secondary-color;
     }
 }
+.nav_active{
+    border-bottom:1px solid $vsion-main-color;
+}
+
 
 .mainvision {
     background-image: url(../img/self-800.png);
@@ -34,6 +39,10 @@
             text-align: right;
         }
     }
+}
+.mainvision-color{
+    border-top: 1px dotted $vsion-secondary-color;
+    border-bottom:1px dotted $vsion-secondary-color;
 }
 
 .custom-h1-title {

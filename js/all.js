@@ -2,18 +2,35 @@ $(document).ready(function () {
      $(window).scroll(function () {
         var scrollPos = $(window).scrollTop();
         var windowHeight = $(window).height();
-        console.log(scrollPos, windowHeight);
+       
 
         $('.scrollTop').each(function () {
             var target = $(this).attr('href');
-            var targetPos = $(target).offset().top;
-            var targetHeight = $(target).outerHeight();
-            if (targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos) {
-                $('.skillbg').addClass('animated-3s bounceInRight');
-                $('.skill-content').addClass('animated-4s  bounceInLeft');
-            } else {
+             var targetPos = $(target).offset().top;
+            var expPos = $('#experience').offset().top;
+            var skillPos = $('#skill').offset().top;
+            var aboutmePos = $('#aboutme').offset().top;
+    
+             var targetHeight = $(target).outerHeight();
+            var expHeight = $('#experience').outerHeight();
+            var skillHeight = $('#skill').outerHeight();
+            var aboutmeHeight = $('#aboutme').outerHeight();
+           
+             if (expPos-180 <= scrollPos && (expPos + expHeight) > scrollPos) {
+                 $('.animated_exp_left').addClass('fadeIn');
+                 $('.animated_exp_right').addClass('fadeIn');
+                  $('.animated_exp_right_3s').addClass('fadeIn');
+              
+                   } ; 
+             if (skillPos -180<= scrollPos && (skillPos + skillHeight) > scrollPos) {
+                 $('.animated_skill_left').addClass('fadeIn ');
+                 $('.animated_skill_right').addClass('fadeIn ');
+             };
+             if (aboutmePos -180 <= scrollPos && (aboutmePos + aboutmeHeight) > scrollPos) {
+                 $('.animated_aboutme_up').addClass('fadeIn');
+                 $('.animated_aboutme_down').addClass('fadeIn');
+             };
 
-            }
         });
     });
     /*響應式自傳開關*/

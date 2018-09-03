@@ -37,7 +37,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
         crossorigin="anonymous">
-<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -45,6 +45,12 @@
 </head>
 
 <body>
+    <style>
+        body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top ">
         <div class="container  ">
@@ -57,12 +63,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ">
-                    <li class="nav-item ">
-                        <a class="nav-item nav-link scrollTop" href="#skill">#Skills</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-item nav-link scrollTop" href="#experience">#Experience</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link scrollTop" href="#skill">#Skills</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-item nav-link scrollTop" href="#aboutme">#About Me</a>
                     </li>
@@ -84,13 +91,13 @@
     <!-- mainvision+profile -->
     <div id="top">
         <div class="row ">
-            <div class="col-md-6 col-12 mainvision">
+            <div class="col-sm-6 col-12 mainvision">
                 <div class="custom-h1-title-sm">
                     <h1 class="h5">Hello</h1>
                     <h1 class="h3">I'm Claire</h1>
                 </div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-sm-6 col-12 mainvision-color">
                 <div class="custom-h1-title">
                     <h1 class="h4 ">Hello</h1>
                     <h1 class="h1 ">I'm Claire</h1>
@@ -135,11 +142,87 @@
         </div>
     </div>
     <!-- content -->
-    <div class="skill " id="skill">
-        <div class="skillbg  ">
-            <h2 class="h2" >#SKILLS</h2>
+
+    <!-- experience -->
+    <div class="exp pb-3" id="experience">
+        <h2 class="h2">#Experience</h2>
+        <div class="my-2">
+            <div class="row justify-content-center">
+                <div class="col-4  bg-plane animated_exp_right"></div>
+                <div class="col-md-8 col-10 exp-content animated_exp_left">
+                    <div class="timeline-section ">
+                        <div class="row mt-3 justify-content-center timeline-pointer pb-3 ">
+                            <div class="col-sm-6 col-12 p-sm-3 animated_exp_left title ">
+                                <h3>聯邦商業銀行&nbsp;</h3>
+                                <h3 class="sec">信用卡暨支付金融處&nbsp;</h3>
+                                <p class="time">2016.11-2018.05&nbsp;</p>
+                                <p>消費促進科 活動企劃&nbsp;</p>
+                                <p>信用卡促刷活動企劃與執行&nbsp;</p>
+                            </div>
+                            <div class="col-sm-6 col-12 p-sm-3 animated_exp_left content">
+                                <h4>
+                                    <i class="fas fa-briefcase"></i> 工作內容</h4>
+                                <ul>
+                                    <li>
+                                        ●國內百貨檔期促刷活動</li>
+                                    <li>
+                                        ●知名藥妝店促刷活動</li>
+                                    <li>
+                                        ●JCB夏日遊樂祭</li>
+                                    <li>
+                                        ●國際組織優惠推廣專案</li>
+                                    <li>
+                                        ●NCCC小額支付平台回饋專案</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-3 justify-content-center timeline-pointer pb-3 ">
+                            <div class="col-sm-6 col-12 p-sm-3 animated_exp_left title">
+                                <h3>中原大學&nbsp;</h3>
+                                <p class="time">2014.09-2016.07&nbsp;</p>
+                                <p>商業設計所 碩士&nbsp;</p>
+                            </div>
+                            <div class="col-sm-6 col-12 p-sm-3 animated_exp_left  content">
+                                <h4>
+                                    <i class="fas fa-graduation-cap"></i> 論文題目</h4>
+                                <p class="content">《行動購物APP數字資訊影響消費者購買意圖之影響》</p>
+                                <h4 class="mt-2">
+                                    <i class="fas fa-chalkboard-teacher"></i> 課程助教</h4>
+                                <p>中原商設 商品企劃課程</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3 justify-content-center timeline-pointer pb-3 ">
+                            <div class="col-sm-6 col-12 p-sm-3 animated_exp_left  title">
+                                <h3>中原大學&nbsp;</h3>
+                                <p class="time">2010.09-2014.07&nbsp;</p>
+                                <p>企業管理學系 學士&nbsp;</p>
+                            </div>
+                            <div class="col-sm-6 col-12 p-sm-3 animated_exp_left content">
+                                <h4>
+                                    <i class="fas fa-trophy"></i> 獲獎經驗</h4>
+                                <p class="content">2013詠夢獎 願景2025青年創意提案大賽 </p>
+                                <p class="rank">佳作</p>
+                                <p class="content">2012區域和平志工績優團隊全國競賽 </p>
+                                <p class="rank">社區服務貢獻獎</p>
+                                <h4>
+                                    <i class="fas fa-book-open"></i> 社團經驗</h4>
+                                <p class="content">41th企管系系學會 公關部部長</p>
+                                <p class="content">40th企管系系學會 公關部部員</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skill-content">
+        <div class="img-1 animated_exp_right_3s"></div>
+        <div class="img-2 animated_exp_right_3s"></div>
+    </div>
+    <!-- skill -->
+    <div class="skill " id="skill">
+        <div class="skillbg animated_skill_left">
+            <h2 class="h2">#SKILLS</h2>
+        </div>
+        <div class="skill-content animated_skill_right">
             <div class="row justify-content-center">
                 <div class="col-md-4 col-sm-8 col-12 p-4">
                     <h3>
@@ -176,96 +259,36 @@
             </div>
         </div>
     </div>
-
-
-
-
-    <div class="container">
-        <div id="experience" class=" experience container-fluid  pb-4">
-            <h2 class="py-4">#Experience</h2>
-            <div class="timeline-section ">
-                <div class="row mt-3 justify-content-center timeline-pointer pb-3">
-                    <div class="col-md-6 col-12 p-sm-3  title ">
-                        <h3>聯邦商業銀行&nbsp;</h3>
-                        <h3 class="sec">信用卡暨支付金融處&nbsp;</h3>
-                        <p class="time">2016.11-2018.05&nbsp;</p>
-                        <p>消費促進科 活動企劃&nbsp;</p>
-                        <p>信用卡促刷活動企劃與執行&nbsp;</p>
-                    </div>
-                    <div class="col-md-6 col-12 p-sm-3   ">
-                        <h4>
-                            <i class="fas fa-briefcase"></i> 工作內容</h4>
-                        <ul>
-                            <li>
-                                ●國內百貨檔期促刷活動</li>
-                            <li>
-                                ●知名藥妝店促刷活動</li>
-                            <li>
-                                ●JCB夏日遊樂祭</li>
-                            <li>
-                                ●國際組織優惠推廣專案</li>
-                            <li>
-                                ●NCCC小額支付平台回饋專案</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row mt-3 justify-content-center timeline-pointer pb-3">
-                    <div class="col-md-6 col-12 p-sm-3 title">
-                        <h3>中原大學&nbsp;</h3>
-                        <p class="time">2014.09-2016.07&nbsp;</p>
-                        <p>商業設計所 碩士&nbsp;</p>
-                    </div>
-                    <div class="col-md-6 col-12 p-sm-3  ">
-                        <h4>
-                            <i class="fas fa-graduation-cap"></i> 論文題目</h4>
-                        <p class="content">《行動購物APP數字資訊影響消費者購買意圖之影響》</p>
-                        <h4 class="mt-2">
-                            <i class="fas fa-chalkboard-teacher"></i> 課程助教</h4>
-                        <p>中原商設 商品企劃課程</p>
-                    </div>
-                </div>
-                <div class="row mt-3 justify-content-center timeline-pointer pb-3">
-                    <div class="col-md-6 col-12 p-sm-3 title ">
-                        <h3>中原大學&nbsp;</h3>
-                        <p class="time">2010.09-2014.07&nbsp;</p>
-                        <p>企業管理學系 學士&nbsp;</p>
-                    </div>
-                    <div class="col-md-6 col-12 p-sm-3   ">
-                        <h4>
-                            <i class="fas fa-trophy"></i> 獲獎經驗</h4>
-                        <p class="content">2013詠夢獎 願景2025青年創意提案大賽 </p>
-                        <p class="rank">佳作</p>
-                        <p class="content">2012區域和平志工績優團隊全國競賽 </p>
-                        <p class="rank">社區服務貢獻獎</p>
-                        <h4>
-                            <i class="fas fa-book-open"></i> 社團經驗</h4>
-                        <p class="content">41th企管系系學會 公關部部長</p>
-                        <p class="content">40th企管系系學會 公關部部員</p>
+    <!-- autobiography -->
+    <div id="aboutme" class="autobiography">
+        <h2 class="h2">#About Me</h2>
+        <div class="row justify-content-center content">
+            <div class="bg animated_aboutme_up">
+            </div>
+            <div class="col-10 animated_aboutme_down">
+                <div class="aboutme my-4 mt-sm-0">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10 col-md-8 col-12">
+                            <p>從學校、職場一路走來跨了很多領域，我認為每個過程都是很好的經驗，從中也得到許多珍貴的經驗。
+                                <span>
+                                    <a class="more" href="#">more...</a>
+                                </span>
+                            </p>
+                            <p class="hide_article">
+                                求學期間主要修習行銷學程並提升平面設計水準，並思考將商業、行銷與設計做結合。 曾組隊參與全國性的商品企劃及行銷提案競賽以強化自己的提案整合能力，另一方面擔任指導教授商品企劃課的課程TA，過程中對於創意商品開發的規劃能力有蠻多啟發。研究所的論文內容是關於行動商務介面中，資訊呈現方式與消費者行為方面的關聯性研究，在研究的過程中獲得很多啟發。
+                            </p>
+                            <p class="hide_article">第一份工作任職於聯邦銀行信用卡暨支付金融處，擔任信用卡活動企劃，主要工作內容是與各通路洽談信用卡的促刷活動，並整合內部資源執行活動內容；工作中有接觸到活動網頁規劃及APP廣宣規劃，了解到良好的使用者體驗有利於整體專案成效，因此想結合過去所學並轉換跑道成為網頁前端設計師。利用空閒時間自行學習網頁語法撰寫(HTML、CSS、RWD)並配合網頁基礎互動效果(jQuery)，現在已達到能熟悉運用寫出基本網頁架構，另外也善於使用Bootstrap4框架快速完成網頁版型；由於網頁前端設計需要學會的項目博大精深，也將持續以學習的心態去吸收更多新技術，期望能保持自身水準並做出符合趨勢的成果。
+                                <span>
+                                    <a class="hide" href="#">(hide)</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="autobiography container">
-            <div id="aboutme" class="aboutme my-4 mt-sm-0">
-                <h2 class="py-4">#About Me</h2>
-                <p>從學校、職場一路走來跨了很多領域，我認為每個過程都是很好的經驗，從中也得到許多珍貴的經驗。
-                    <span>
-                        <a class="more" href="#">more...</a>
-                    </span>
-                </p>
-                <p class="hide_article">
-                    求學期間主要修習行銷學程並提升平面設計水準，並思考將商業、行銷與設計做結合。 曾組隊參與全國性的商品企劃及行銷提案競賽以強化自己的提案整合能力，另一方面擔任指導教授商品企劃課的課程TA，過程中對於創意商品開發的規劃能力有蠻多啟發。研究所的論文內容是關於行動商務介面中，資訊呈現方式與消費者行為方面的關聯性研究，在研究的過程中獲得很多啟發。
-                </p>
-                <p class="hide_article">第一份工作任職於聯邦銀行信用卡暨支付金融處，擔任信用卡活動企劃，主要工作內容是與各通路洽談信用卡的促刷活動，並整合內部資源執行活動內容；工作中有接觸到活動網頁規劃及APP廣宣規劃，了解到良好的使用者體驗有利於整體專案成效，因此想結合過去所學並轉換跑道成為網頁前端設計師。利用空閒時間自行學習網頁語法撰寫(HTML、CSS、RWD)並配合網頁基礎互動效果(jQuery)，現在已達到能熟悉運用寫出基本網頁架構，另外也善於使用Bootstrap4框架快速完成網頁版型；由於網頁前端設計需要學會的項目博大精深，也將持續以學習的心態去吸收更多新技術，期望能保持自身水準並做出符合趨勢的成果。
-                    <span>
-                        <a class="hide" href="#">(hide)</a>
-                    </span>
-                </p>
-            </div>
-        </div>
-
     </div>
-    <footer class="bg-light py-4">
+    <footer class="bg-light mt-4 py-4">
         <div class="container text-secondary text-center">
             <i class="far fa-copyright"></i>
             Copyright 2018 CLAIREJIA
