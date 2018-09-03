@@ -9,7 +9,6 @@
         }
 }
 
-
 .box-shadow {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
     transition: box-shadow .3s;
@@ -24,3 +23,13 @@
 .card-footer {
     background: transparent;
 }
+.card{
+
+border-radius: 1rem;
+.card-img-top{
+    height: 145px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius:  1rem;
+     border-top-right-radius:  1rem;
+}}
