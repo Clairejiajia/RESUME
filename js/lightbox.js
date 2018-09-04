@@ -48,7 +48,7 @@
     imageFadeDuration: 600,
     // maxWidth: 800,
     // maxHeight: 600,
-    positionFromTop: 300,
+    positionFromTop: 100,
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,
