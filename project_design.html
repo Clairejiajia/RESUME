@@ -8,403 +8,498 @@
     <title>Claire's Graphic Design</title>
     <link rel="shortcut icon" href="img/jia.ico" />
     <link rel="bookmark" href="img/jia.ico" />
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-        crossorigin="anonymous">
+    <!-- bootstrap4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- lightbox.css -->
     <link rel="stylesheet" href="css/lightbox.css">
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
-<body >
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top boxshadow">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img style="height: 32px;" src="img/logo_word.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html" title="回首頁">Home</a>
-
-                    <a class="nav-item nav-link" href="https://goo.gl/fiakj1" target="blank" title="點我下載履歷">
-                        <i class="fas fa-cloud-download-alt mr-1"></i>Resume</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
+    <div id="header"></div>
     <div class="main">
-    <div class="project_design_mainvision" id="top">
-    </div>
-    <div class="container my-3">
-        <div class="row">
-            <div class=" col-sm-4 col-12">
-                <div class="sticky-top " style="top:70px;">
-                    <h1 class="h2 text-info">Graphic Design</h1>
-                    <div class="list-group" id="myList" role="tablist">
+        <div class="project_design_mainvision" id="top">
+        </div>
+        <div class="container my-3">
+            <div class="row">
+                <div class=" col-sm-4 col-12">
+                    <div class="sticky-top " style="top:70px;">
+                        <h1 class="h2 text-info">Graphic Design</h1>
+                        <div class="list-group" id="myList" role="tablist"> <button type="button"
+                                class="list-group-item list-group-item-action active" data-toggle="list" href="#web"
+                                role="tab">金石堂網路書店
+                                <span class="badge badge-warning badge-pill ml-3">9</span>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action"
+                                data-toggle="list" href="#web" role="tab">大榮旅遊 dts group
+                                <span class="badge badge-warning badge-pill ml-3">9</span>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action " data-toggle="list"
+                                href="#designproject" role="tab">研究所設計專案
+                                <span class="badge badge-warning badge-pill  ml-3">5</span>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action" data-toggle="list"
+                                href="#other" role="tab"> Other
+                                <span class="badge badge-warning badge-pill ml-3">3</span>
+                            </button>
 
-                        <button type="button" class="list-group-item list-group-item-action active" data-toggle="list" href="#designproject" role="tab">Design Project
-                            <span class="badge badge-warning badge-pill  ml-3">5</span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="list" href="#dailyui" role="tab"> Daily UI
-                            <span class="badge badge-warning badge-pill ml-3">10</span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action"  data-toggle="list" href="#web" role="tab"> Web Layout
-                            <span class="badge badge-warning badge-pill ml-3">3</span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action"  data-toggle="list" href="#other" role="tab"> Other
-                            <span class="badge badge-warning badge-pill ml-3">3</span>
-                        </button>
+                        </div>
 
                     </div>
-
                 </div>
-            </div>
-            <div class="col-sm-8 col-12 tab-content">
-                <!-- project -->
-                <section class="tab-pane active" id="designproject" role="tabpanel">
-                    <h2 class="h3 my-3">Design Project</h2>
-                    <div class="row justify-content-center">
-                        <!-- 勵馨 -->
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="fundation" href="img/project/fundation-content-1.png" style="background-image: url(img/project/fundation-360.png)"
-                                    data-title="勵馨基金會-感謝卡設計">
-                                </a>
-                                <a class="card-img-top example-image-link" data-lightbox="fundation" href="img/project/fundation-content-2.png" style="display: none;"
-                                    ) data-title="勵馨基金會-感謝卡相框結構設計">
-                                </a>
-                                <a class="card-img-top example-image-link" data-lightbox="fundation" href="img/project/fundation-content-3.png" style="display: none;"
-                                    ) data-title="勵馨基金會-零錢箱故事卡">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">勵馨基金會</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">感謝卡、相框、零錢箱故事卡</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
+                <div class="col-sm-8 col-12 tab-content">
+                       <!-- 金石堂網路書店 -->
+                       <section class="tab-pane active" id="web" role="tabpanel">
+                        <h2 class="h3 my-0">金石堂網路書店網頁</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" href="https://www.kingstone.com.tw/"
+                                        target="blank" style="background-image: url(img/web/ks_page1.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">金石堂網路書店</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">官網改版+維護</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link"
+                                        href="https://www.kingstone.com.tw/activity/speshow/A2102126" target="blank"
+                                        style="background-image: url(img/web/ks_page2.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">金石堂書展套版</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">活動書展套版版型設計</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link"
+                                        href="http://www.dtsgroup.com.tw/subject/paradise_2020/" target="blank"
+                                        style="background-image: url(img/web/ks_page4.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">新版會員中心</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">會員中心改版</p>
+                                    </div>
+                                </div>
+                            </div>
+                 
+                        </div>
+                        <h2 class="h3 my-0">金石堂網路書店 廣告banner</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="dtsLine"
+                                        href="img/banner/line_banner_1.jpg"
+                                        style="background-image: url(img/banner/line-300.jpg)"
+                                        data-title="沖繩租車優惠Line廣告">
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsLine"
+                                            href="img/banner/line_banner_2.jpg" style="display: none;" )
+                                            data-title="沖繩租車時段開放廣告">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsLine"
+                                            href="img/banner/line_banner_3.jpg" style="display: none;" )
+                                            data-title="韓國團體促銷廣告">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">LINE廣告</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">廣告BANNER設計</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="dtsFB"
+                                        href="img/banner/fb_banner_1.jpg"
+                                        style="background-image: url(img/banner/fb-300.jpg)" data-title="沖繩租車時段開放廣告">
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsFB"
+                                            href="img/banner/fb_banner_2.jpg" style="display: none;" )
+                                            data-title="東京團體促銷廣告">
+                                        </a>
+
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">FB廣告</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">廣告BANNER設計</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                        href="img/banner/web_banner_1.jpg"
+                                        style="background-image: url(img/banner/web-300.jpg)" data-title="沖繩求婚專案banner">
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_2.jpg" style="display: none;" )
+                                            data-title="連假廣告banner">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_3.jpg" style="display: none;" )
+                                            data-title="跨年團體促銷廣告">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_4.jpg" style="display: none;" )
+                                            data-title="元旦團體促銷廣告">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_5.jpg" style="display: none;" )
+                                            data-title="沖繩飯店促銷廣告">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">網頁banner</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">廣告BANNER設計</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                        <!--逢春園 -->
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="fengchunvilla" href="img/project/fengchunvilla-800.png" style="background-image: url(img/project/fengchunvilla-360.png)"
-                                    data-title="逢春園民宿度假地圖-文創觀光導覽地圖">
-                                    <a class="card-img-top example-image-link" data-lightbox="fengchunvilla" href="img/project/fengchunvilla-content-1.png" style="display: none;"
-                                        ) data-title="逢春園民宿度假地圖-餐墊+名片應用">
-                                    </a>
-                                    <a class="card-img-top example-image-link" data-lightbox="fengchunvilla" href="img/project/fengchunvilla-content-2.png" style="display: none;"
-                                        ) data-title="逢春園民宿度假地圖-手提袋應用">
+                    </section>
+                    <!-- 大榮-->
+                    <section class="tab-pane " id="web" role="tabpanel">
+                        <h2 class="h3 my-0">大榮旅遊網頁</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" href="http://www.dtsgroup.com.tw/"
+                                        target="blank" style="background-image: url(img/web/page1.jpg)">
                                     </a>
                                     <div class="card-body">
-                                        <h5 class="card-title h5 text-info">逢春園民宿度假地圖</h5>
-                                        <p class="card-text text-secondary mb-3 text-secondary">文創觀光導覽地圖及文宣品應用</p>
+                                        <h5 class="card-title h5 text-info">大榮旅遊</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">大榮旅遊官網</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link"
+                                        href="http://www.gogojp.com.tw/index.aspx" target="blank"
+                                        style="background-image: url(img/web/page2.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">沖繩大榮</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">沖繩子公司官網</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link"
+                                        href="http://www.dtsgroup.com.tw/subject/paradise_2020/" target="blank"
+                                        style="background-image: url(img/web/page3.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">日本樂園</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">活動網頁</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link"
+                                        href="http://www.dtsgroup.com.tw/event/2020_fall/?area=ALL" target="blank"
+                                        style="background-image: url(img/web/page4.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">日本賞楓網頁</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">活動網頁</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link"
+                                        href="https://www.gogojp.com.tw/subject/minshuku/" target="blank"
+                                        style="background-image: url(img/web/page5.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">沖繩民宿</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">沖繩民宿網站</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" href="https://www.gogojp.com.tw/wedding/"
+                                        target="blank" style="background-image: url(img/web/page6.jpg)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">沖繩婚禮</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">沖繩婚禮網站</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h3 my-0">大榮旅遊 廣告banner</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="dtsLine"
+                                        href="img/banner/line_banner_1.jpg"
+                                        style="background-image: url(img/banner/line-300.jpg)"
+                                        data-title="沖繩租車優惠Line廣告">
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsLine"
+                                            href="img/banner/line_banner_2.jpg" style="display: none;" )
+                                            data-title="沖繩租車時段開放廣告">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsLine"
+                                            href="img/banner/line_banner_3.jpg" style="display: none;" )
+                                            data-title="韓國團體促銷廣告">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">LINE廣告</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">廣告BANNER設計</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="dtsFB"
+                                        href="img/banner/fb_banner_1.jpg"
+                                        style="background-image: url(img/banner/fb-300.jpg)" data-title="沖繩租車時段開放廣告">
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsFB"
+                                            href="img/banner/fb_banner_2.jpg" style="display: none;" )
+                                            data-title="東京團體促銷廣告">
+                                        </a>
+
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">FB廣告</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">廣告BANNER設計</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                        href="img/banner/web_banner_1.jpg"
+                                        style="background-image: url(img/banner/web-300.jpg)" data-title="沖繩求婚專案banner">
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_2.jpg" style="display: none;" )
+                                            data-title="連假廣告banner">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_3.jpg" style="display: none;" )
+                                            data-title="跨年團體促銷廣告">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_4.jpg" style="display: none;" )
+                                            data-title="元旦團體促銷廣告">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="dtsWeb"
+                                            href="img/banner/web_banner_5.jpg" style="display: none;" )
+                                            data-title="沖繩飯店促銷廣告">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">網頁banner</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">廣告BANNER設計</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 研究所設計案 -->
+                    <section class="tab-pane " id="designproject" role="tabpanel">
+                        <h2 class="h3 my-0">研究所設計專案</h2>
+                        <div class="row justify-content-center">
+                            <!-- 勵馨 -->
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="fundation"
+                                        href="img/project/fundation-content-1.png"
+                                        style="background-image: url(img/project/fundation-360.png)"
+                                        data-title="勵馨基金會-感謝卡設計">
+                                    </a>
+                                    <a class="card-img-top example-image-link" data-lightbox="fundation"
+                                        href="img/project/fundation-content-2.png" style="display: none;" )
+                                        data-title="勵馨基金會-感謝卡相框結構設計">
+                                    </a>
+                                    <a class="card-img-top example-image-link" data-lightbox="fundation"
+                                        href="img/project/fundation-content-3.png" style="display: none;" )
+                                        data-title="勵馨基金會-零錢箱故事卡">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">勵馨基金會</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">感謝卡、相框、零錢箱故事卡</p>
                                         <span class="badge badge-info badge-sm">AI</span>
                                         <span class="badge badge-info badge-sm ml-2">PS</span>
                                     </div>
-                            </div>
-                        </div>
-                        <!--青年事務局 -->
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="poster" href="img/project/poster-.png" style="background-image: url(img/project/poster-360-.png)"
-                                    data-title="志工圓夢計畫團隊-分享交流會海報">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">桃園青年事務局</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">海報設計</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
                                 </div>
                             </div>
-                        </div>
-                        <!--長榮貼圖-->
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="air" href="img/project/air-phone-800.png" style="background-image: url(img/project/air-360.png)"
-                                    data-title="航空公司貼圖應用"></a>
-                                <a class="card-img-top example-image-link" data-lightbox="air" href="img/project/air-800.png" style="display:none;" data-title="航空公司貼圖應用">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">航空公司貼圖設計</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">安全週文宣競賽(社內)</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
+                            <!--逢春園 -->
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="fengchunvilla"
+                                        href="img/project/fengchunvilla-800.png"
+                                        style="background-image: url(img/project/fengchunvilla-360.png)"
+                                        data-title="逢春園民宿度假地圖-文創觀光導覽地圖">
+                                        <a class="card-img-top example-image-link" data-lightbox="fengchunvilla"
+                                            href="img/project/fengchunvilla-content-1.png" style="display: none;" )
+                                            data-title="逢春園民宿度假地圖-餐墊+名片應用">
+                                        </a>
+                                        <a class="card-img-top example-image-link" data-lightbox="fengchunvilla"
+                                            href="img/project/fengchunvilla-content-2.png" style="display: none;" )
+                                            data-title="逢春園民宿度假地圖-手提袋應用">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title h5 text-info">逢春園民宿度假地圖</h5>
+                                            <p class="card-text text-secondary mb-3 text-secondary">文創觀光導覽地圖及文宣品應用</p>
+                                            <span class="badge badge-info badge-sm">AI</span>
+                                            <span class="badge badge-info badge-sm ml-2">PS</span>
+                                        </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--東吳-->
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="scu-law" href="img/project/scu-law-logo-600.png" style="background-image: url(img/project/scu-law-360.png)"
-                                    data-title="東吳法律迎新宿營LOGO設計">
-                                </a>
-                                <a class="card-img-top example-image-link" data-lightbox="scu-law" href="img/project/scu-law-600.png" style="display:none;"
-                                    data-title="東吳法律迎新宿營營服">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">系服設計</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">東吳法律系迎新</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- dailyui -->
-                <section class="tab-pane " id="dailyui" role="tabpanel">
-                    <h2 class="h3 my-3">Daily UI</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui001" href="img/uidesign/001-600.jpg" style="background-image: url(img/uidesign/001-360.jpg)"
-                                    data-title="登入介面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">SignUp</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #001</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui002" href="img/uidesign/002-600.jpg" style="background-image: url(img/uidesign/002-360.jpg)"
-                                    data-title="結帳頁面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Checkout</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #002</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui003" href="img/uidesign/003-600.jpg" style="background-image: url(img/uidesign/003-360.jpg)"
-                                    data-title="首頁頁面設計">
-                                </a>
-                                <a class="card-img-top example-image-link" data-lightbox="ui003" href="img/uidesign/003-600-1.jpg" style="display: none;"
-                                    data-title="首頁頁面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">LandingPage</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #003</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui004" href="img/uidesign/004-600.jpg" style="background-image: url(img/uidesign/004-360.jpg)"
-                                    data-title="計算機介面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Calculator</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #004</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui005" href="img/uidesign/005-600.png" style="background-image: url(img/uidesign/005-360.png)"
-                                    data-title="慈善機構捐獻App icon設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">App Icon</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #005</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui006" href="img/uidesign/006-600.jpg" style="background-image: url(img/uidesign/006-360.jpg)"
-                                    data-title="使用者資訊介面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">User Profile</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #006</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui007" href="img/uidesign/007-600.jpg" style="background-image: url(img/uidesign/007-360.jpg)"
-                                    data-title="設定介面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Setting</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #007</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui008" href="img/uidesign/008-600.jpg" style="background-image: url(img/uidesign/008-360.jpg)"
-                                    data-title="404連線異常頁面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">404 Page</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #008</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui009" href="img/uidesign/009-600.jpg" style="background-image: url(img/uidesign/009-360.jpg)"
-                                    data-title="音樂播放器介面設計">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Music Player</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #009</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="ui010" href="img/uidesign/010-600.jpg" style="background-image: url(img/uidesign/010-360.jpg)"
-                                    data-title="社群媒體分享設計"></a>
-                                <div class="card-body">
+                            <!--青年事務局 -->
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="poster"
+                                        href="img/project/poster-.png"
+                                        style="background-image: url(img/project/poster-360-.png)"
+                                        data-title="志工圓夢計畫團隊-分享交流會海報">
                                     </a>
-                                    <h5 class="card-title h5 text-info">Social Share</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">DailyUi #010</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">桃園青年事務局</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">海報設計</p>
+                                        <span class="badge badge-info badge-sm">AI</span>
+                                        <span class="badge badge-info badge-sm ml-2">PS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--長榮貼圖-->
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="air"
+                                        href="img/project/air-phone-800.png"
+                                        style="background-image: url(img/project/air-360.png)"
+                                        data-title="航空公司貼圖應用"></a>
+                                    <a class="card-img-top example-image-link" data-lightbox="air"
+                                        href="img/project/air-800.png" style="display:none;" data-title="航空公司貼圖應用">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">航空公司貼圖設計</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">安全週文宣競賽(社內)</p>
+                                        <span class="badge badge-info badge-sm">AI</span>
+                                        <span class="badge badge-info badge-sm ml-2">PS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--東吳-->
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="scu-law"
+                                        href="img/project/scu-law-logo-600.png"
+                                        style="background-image: url(img/project/scu-law-360.png)"
+                                        data-title="東吳法律迎新宿營LOGO設計">
+                                    </a>
+                                    <a class="card-img-top example-image-link" data-lightbox="scu-law"
+                                        href="img/project/scu-law-600.png" style="display:none;"
+                                        data-title="東吳法律迎新宿營營服">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">系服設計</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">東吳法律系迎新</p>
+                                        <span class="badge badge-info badge-sm">AI</span>
+                                        <span class="badge badge-info badge-sm ml-2">PS</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- web -->
-                <section class="tab-pane" id="web" role="tabpanel">
-                    <h2 class="h3 my-3">Web Layout</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" href="https://clairejiajia.github.io/landingpage/" target="blank" style="background-image: url(img/web/web-restaurant-2.png)">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">LandingPage</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">單頁網頁切版</p>
+                    </section>
+
+
+                    <!-- other -->
+                    <section class="tab-pane " id="other" role="tabpanel">
+                        <h2 class="h3 my-0">Other</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="fontdesign"
+                                        data-title="幾何字體設計" href="img/project/fontdesign-800.png"
+                                        style="background-image: url(img/project/fontdesign.png)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">字體設計</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">幾何圖形設計</p>
+                                        <span class="badge badge-info badge-sm">AI</span>
+                                        <span class="badge badge-info badge-sm ml-2">PS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="Epson"
+                                        data-title="Epson「歸。綠」競賽 T-shirt設計" href="img/project/epson-800.png"
+                                        style="background-image: url(img/project/epson-360.png)">
+                                    </a>
+                                    <a class="card-img-top example-image-link" data-lightbox="Epson"
+                                        data-title="Epson「歸。綠」競賽 T-shirt設計" href="img/project/epson-800-green.png"
+                                        style="display: none;">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">Epson「歸。綠」</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">T-shirt設計</p>
+                                        <span class="badge badge-info badge-sm">AI</span>
+                                        <span class="badge badge-info badge-sm ml-2">PS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-10 py-3">
+                                <div class="card  text-center h-100 border-0 box-shadow">
+                                    <a class="card-img-top example-image-link" data-lightbox="cnblue"
+                                        data-title="言情風格人像" href="img/project/cnblue-800.png"
+                                        style="background-image: url(img/project/cnblue.png)">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title h5 text-info">言情風格人像</h5>
+                                        <p class="card-text text-secondary mb-3 text-secondary">以南韓樂團形象為主體</p>
+                                        <span class="badge badge-info badge-sm">Painter</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" href="https://clairejiajia.github.io/shopping/" target="blank" style="background-image: url(img/web/web-shop.png)">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Shopping</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">商品列表、商品介紹、結帳流程頁面</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" href="https://clairejiajia.github.io/dashboard/" target="blank" style="background-image: url(img/web/web-dashboard.png)">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Dashboard</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">商務後台頁面</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- other -->
-                <section class="tab-pane " id="other" role="tabpanel">
-                    <h2 class="h3 my-3">Other</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="fontdesign" data-title="幾何字體設計" href="img/project/fontdesign-800.png"
-                                    style="background-image: url(img/project/fontdesign.png)">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">字體設計</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">幾何圖形設計</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="Epson" data-title="Epson「歸。綠」競賽 T-shirt設計" href="img/project/epson-800.png"
-                                    style="background-image: url(img/project/epson-360.png)">
-                                </a>
-                                <a class="card-img-top example-image-link" data-lightbox="Epson" data-title="Epson「歸。綠」競賽 T-shirt設計" href="img/project/epson-800-green.png"
-                                    style="display: none;">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">Epson「歸。綠」</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">T-shirt設計</p>
-                                    <span class="badge badge-info badge-sm">AI</span>
-                                    <span class="badge badge-info badge-sm ml-2">PS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-10 my-3">
-                            <div class="card  text-center h-100 border-0 box-shadow">
-                                <a class="card-img-top example-image-link" data-lightbox="cnblue" data-title="言情風格人像" href="img/project/cnblue-800.png" style="background-image: url(img/project/cnblue.png)">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title h5 text-info">言情風格人像</h5>
-                                    <p class="card-text text-secondary mb-3 text-secondary">以南韓樂團形象為主體</p>
-                                    <span class="badge badge-info badge-sm">Painter</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div id="footer"></div>
 
-
-    <footer class="bg-light py-4">
-        <div class="container text-secondary text-center">
-            <i class="far fa-copyright"></i>
-            Copyright 2018 CLAIREJIA
-        </div>
-        <div class="footer pt-2">
-            <a class="scrollTop" href="#top" title="TOP">top</a>
-        </div>
-    </footer>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/all.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#header').load('header.html')
+            $('#footer').load('footer.html')
+        })
+    </script>
 </body>
 
 </html>
