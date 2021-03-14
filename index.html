@@ -278,6 +278,7 @@
                         <li>RWD</li>
                         <li>javascript</li>
                         <li>jQuery</li>
+                        <li>Gulp</li>
                         <li>Bootstrap4</li>
                     </ul>
                 </div>
@@ -333,16 +334,7 @@
             </div>
         </div>
     </div>
-    <footer class="bg-light mt-4 py-4">
-        <div class="container text-secondary text-center">
-            <i class="far fa-copyright"></i>
-            Copyright 2018 CLAIREJIA
-        </div>
-        <div class="footer pt-2">
-            <a class="scrollTop" href="#top" title="TOP">top</a>
-        </div>
-    </footer>
-
+<div id="footer"></div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -352,6 +344,12 @@
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
+    <script>
+        $(document).ready(function () {
+         $('#header').load('header_index.html')
+         $('#footer').load('footer.html')
+     })
+ </script>
 </body>
 
 </html>
