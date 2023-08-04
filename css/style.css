@@ -84,7 +84,7 @@ img {
 }
 
 .mainvision {
-  background-image: url(../img/self-800.png);
+  background-image: url(../img/self-800.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -708,35 +708,3 @@ img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-
-.project_web_mainvision {
-  background-image: url(../img/web-vison.png);
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: 350px;
-}
-
-@media (max-width: 578px) {
-  .project_web_mainvision {
-    height: 280px;
-  }
-}
-
-.text-no-decoration {
-  text-decoration: none;
-  display: block;
-}
-
-.btn-outline-vision {
-  color: vsion-secondary-color;
-  background-color: transparent;
-  background-image: none;
-  border-color: vsion-secondary-color;
-}
-
-.btn-vision:hover {
-  background-color: vsion-secondary-color;
-  color: #000;
-}
-/*# sourceMappingURL=style.css.map */
