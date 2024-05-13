@@ -1,3 +1,23 @@
+    .index_bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+
+        li {width: 33%;
+            background: #fff;
+            &:nth-child(1){
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            &:nth-last-child(1){
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+
     .skill {
         height: 450px;
         position: relative;
@@ -56,7 +76,7 @@
                 width: 90%;
             }
 
-            @media (max-width:375px) {
+            @media (max-width:480px) {
                 width: 100%;
                 margin-top: 90px;
             }
@@ -87,8 +107,7 @@
             }
 
             ul {
-                padding-left: 18px;
-
+              
                 li {
                     font-size: $fontsize-s;
                     color: $vsion-third-color;
@@ -135,12 +154,10 @@
             }
         }
 
-        ;
-
         .img-2 {
 
             position: absolute;
-           bottom: 14%;
+            bottom: 14%;
             left: 25%;
             width: 200px;
             height: 200px;
@@ -160,6 +177,7 @@
                 display: none;
             }
         }
+
         .img-3 {
 
             position: absolute;
@@ -182,7 +200,7 @@
                 display: none;
             }
         }
-
+       
         .bg-plane {
             background-image: url(../img/plane.png);
             background-size: contain;
@@ -211,14 +229,15 @@
                 text-align: right;
 
                 @media (max-width: 767px) {
-                    text-align: center;
+                    text-align: justify;
+                    margin-bottom: 10px;
                 }
             }
 
             .content {
 
                 @media (max-width: 767px) {
-                    text-align: center;
+                    text-align: justify
                 }
             }
 
@@ -226,6 +245,7 @@
                 font-weight: 600;
                 color: $vsion-main-color;
                 font-size: $fontsize-l;
+              
             }
 
             h3.sec {
@@ -240,7 +260,7 @@
                 font-size: $fontsize-m;
 
                 @media (max-width: 769px) {
-                    color: $vsion-secondary-color;
+                    color: $vsion-secondary-color;  text-align: justify;
                 }
             }
 
@@ -249,7 +269,11 @@
                 color: $vsion-secondary-color;
                 line-height: 20px;
                 margin-top: 4px;
-                margin-bottom: 4px;
+                margin-bottom: 4px; 
+                @media (max-width: 767px) {
+                    text-align: justify;
+                    font-size: 14px;
+                }
             }
 
             p.time,
@@ -267,9 +291,15 @@
                     line-height: 20px;
                     margin-top: 4px;
                     margin-bottom: 4px;
+                    @media (max-width: 769px) {
+                     text-align: justify;
+                    }
                 }
             }
+          
         }
+
+    
     }
 
     .timeline-section {
